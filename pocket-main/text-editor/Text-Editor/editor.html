@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editor</title>
+    <!-- Css link goes here -->
+    <link rel="stylesheet" href="./css/editor.css" />
+    <!-- Fontawesome link goes here -->
+    <script
+      src="https://kit.fontawesome.com/add6e03308.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <h1 style="text-align: center">My Awesome Editor</h1>
+      <div id="editor-container">
+        <div id="editor-options-container">
+          <!-- bold, italic, underline -->
+          <div id="text-style" class="editor-options">
+            <button>
+              <i class="fa-solid fa-bold"></i>
+            </button>
+            <button>
+              <i class="fa-solid fa-italic"></i>
+            </button>
+            <button>
+              <i class="fa-solid fa-underline"></i>
+            </button>
+          </div>
+          <!-- alignments -->
+          <div id="text-align" class="editor-options">
+            <button>
+              <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button>
+              <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button>
+              <i class="fa-solid fa-align-right"></i>
+            </button>
+            <button>
+              <i class="fa-solid fa-align-justify"></i>
+            </button>
+          </div>
+          <!-- font size, letterCase, color -->
+          <div id="text-size" class="editor-options">
+            <input id="font-size" type="number" value="16" min="1" max="100" />
+
+            <button id="text-transform">
+              <span>aA</span>
+            </button>
+            <input id="pick-color" type="color" />
+          </div>
+        </div>
+        <!-- The text area for text input -->
+        <div id="editor-textarea-container">
+          <textarea id="editor" rows="15" cols="123"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our script goes here -->
+    <script src="./js/editor.js"></script>
+  </body>
+</html>

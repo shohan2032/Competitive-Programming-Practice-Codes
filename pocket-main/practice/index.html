@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .card-container{
+            display: flex;
+            gap: 10px;
+        }
+      .card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 200px;
+      }
+
+      /* On mouse-over, add a deeper shadow */
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      /* Add some padding inside the card container */
+      .container {
+        padding: 2px 16px;
+      }
+      button{
+        padding: 5px 10px;
+        color: white;
+        font-weight: bold;
+        border:none;
+        background-color: rgb(193, 213, 62);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="card-container">
+        <div class="card">
+            <img src="./assets/img_avatar.png" alt="Avatar" style="width: 100%" />
+            <div class="container">
+              <h4><b>Abdullah</b></h4>
+              <p id="designation">Architect</p>
+              <button class="get-name-btn">Get Name</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/img_avatar.png" alt="Avatar" style="width: 100%" />
+            <div class="container">
+              <h4><b>Hasan</b></h4>
+              <p>Software Engineer</p>
+              <button class="get-name-btn">Get Name</button>
+            </div>
+          </div>
+    </section>
+    <script>
+        const buttons = document.getElementsByClassName('get-name-btn');
+        // console.log(buttons);
+        for (const button of buttons) {
+            button.addEventListener('click', getName)
+        }
+        function getName(e){
+            
+            const parentNode = e.target.parentNode
+            console.log(parentNode);
+
+        }
+    </script>
+  </body>
+</html>

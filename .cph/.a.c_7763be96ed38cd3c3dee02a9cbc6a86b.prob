@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"c:\\CP code\\a.c","tests":[{"id":1692875901547,"input":"bac abc","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\CP code\\a.c","group":"local","local":true}

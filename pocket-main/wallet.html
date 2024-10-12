@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My wallet</title>
+    <link rel="stylesheet" href="./styles/utilities.css" />
+    <link rel="stylesheet" href="./styles/pocket.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1 class="pocket-heading">Welcome to my wallet</h1>
+      <section class="container" id="pocket">
+        <div class="amount" id="deposit">
+          <h4>Deposit Amount</h4>
+          <h4>$ <span id="deposit-amount">00</span></h4>
+        </div>
+        <div class="amount" id="withdraw">
+          <h4>Withdraw Amount</h4>
+          <h4>$ <span id="withdraw-amount">00</span></h4>
+        </div>
+        <div class="amount" id="total">
+          <h4>Total Amount</h4>
+          <h4>$ <span id="total-amount">00</span></h4>
+        </div>
+      </section>
+    </header>
+    <main class="container">
+      <section class="money-booth" id="money-booth">
+        <div class="amount" id="withdraw">
+          Deposit Amount
+          <input
+            id="deposit-input"
+            type="number"
+            placeholder="Enter Deposit"
+            name="deposit"
+            required
+          />
+          <button id="deposit-button">Deposit</button>
+        </div>
+        <div class="amount" id="total">
+          Withdraw Amount
+          <input
+            id="withdraw-input"
+            type="text"
+            placeholder="Enter Withdraw"
+            name="withdraw"
+            required
+          />
+          <button id="withdraw-button">Withdraw</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scripts/wallet.js"></script>
+  </body>
+</html>
